@@ -6,7 +6,7 @@ export default function App() {
   const [userId, setUserId] = useState(0);
 
   return (
-    <div className="App container-fluid">
+    <div className="App container-fluid w-50 p-5">
       <div className="row m-1">
         <div className="col-md-12">
           <form>
@@ -14,8 +14,9 @@ export default function App() {
           </form>
         </div>
       </div>
-
-      <UserProfile userId={userId} />
+      {
+          userId ? <UserProfile userId={userId} /> : <div className="text-primary">Please search using user number</div>
+      }      
     </div>
   );
 }

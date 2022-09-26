@@ -5,24 +5,40 @@
   width: 75%;
 }
 
-li{
+li {
   list-style: none;
 }
 
-#name {
-  margin: 10px;
+.nav-item:hover {
+  background-color: #bce2ec;
 }
-  
-#photo {
-  margin-top:20px;
+
+.bg-primary {
+  background-color: #74c8dc !important;
+}
+
+img {
+  border-radius: 9999px;
+  right: 118px
+}
+
+.card {
+  height: 460px;
+}
+
+.card-content {
+  padding: 60px;
+  width: 90%;
+  margin: auto;
+  margin: 23px 15px;
+  border-radius: 15px;
+  height: 65% !important;
+}
+
+nav {
+  background-color: #eaedf0;
 }
 
 #description {
-  margin-top:30px; 
+  font-size: 13px;
 }
-
-.nav-item:hover{
-  background-color: rgb(242, 240, 255);
-}
-
-  
