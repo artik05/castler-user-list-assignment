@@ -4,7 +4,6 @@ const API_URL = 'https://reqres.in/api/users/{userId}';
 
 export default function UserProfile({ userId }) {
   const [userData, setUserData] = useState([]);
-  const [errMsg, setErrMsg] = useState("");
 
   const getUser = () => {
     fetch(API_URL.replace('{userId}', userId || 1))
@@ -24,8 +23,7 @@ export default function UserProfile({ userId }) {
       getUser();
     }
 
-  }, [userId])
-
+  }, [userId]);
 
   return (
     !userData ? <div className='text-danger m-3'>No records found</div> :

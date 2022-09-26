@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./styles.css";
 import UserProfile from "./components/UserProfile";
 
-//Take the Name and Gender of the user and add it to the below list. Also, user can delete it.
 export default function App() {
   const [userId, setUserId] = useState(0);
 
